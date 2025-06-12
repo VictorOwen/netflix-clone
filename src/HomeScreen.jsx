@@ -1,6 +1,7 @@
 import React from 'react';
 import './HomeScreen.css';
 import Nav from './Nav.jsx';
+import Banner from './Banner.jsx';
 
 function HomeScreen() {
  
