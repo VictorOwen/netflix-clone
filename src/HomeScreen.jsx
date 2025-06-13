@@ -1,8 +1,9 @@
 import React from 'react';
 import './HomeScreen.css';
-import Nav from './Nav.jsx';
-import Banner from './Banner.jsx';
-import requests from './Request.jsx';
+import Nav from './Nav';
+import Banner from './Banner';
+import requests from './Request';
+import Rows from './Row';
 
 function HomeScreen() {
  
@@ -30,7 +31,17 @@ function HomeScreen() {
         <Rows title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
         <Rows title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
         <Rows title="Sci-Fi Movies" fetchUrl={requests.fetchSciFiMovies} />
-        
+        <Rows title="Western Movies" fetchUrl={requests.fetchWesternMovies} />
+        <Rows title="Animation Movies" fetchUrl={requests.fetchAnimationMovies} />
+        <Rows title="Mystery Movies" fetchUrl={requests.fetchMysteryMovies} />
+        <Rows title="TV Shows" fetchUrl={requests.fetchTVShows} />
+        <Rows title="Family Movies" fetchUrl={requests.fetchFamilyMovies} />
+        <Rows title="Upcoming Movies" fetchUrl={requests.fetchUpcomingMovies} />
+        <Rows title="Popular Movies" fetchUrl={requests.fetchPopularMovies} />
+        <Rows title="Now Playing Movies" fetchUrl={requests.fetchNowPlayingMovies} />
+        <Rows title="Latest Movies" fetchUrl={requests.fetchLatestMovies} />
+        <Rows title="Search Movies" fetchUrl={requests.fetchSearchMovies} />
+
 
        </div>
       </>
