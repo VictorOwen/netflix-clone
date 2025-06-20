@@ -12,11 +12,12 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-      {!user?(<LoginScreen/>):(
+      
       <Routes>
         <Route path="/" element={<HomeScreen />} />
-      </Routes>)}
+      </Routes>
     </BrowserRouter>
+    
 
     </div>
     
@@ -25,3 +26,4 @@ function App() {
 
 
 export default App
+//{!user?(<LoginScreen/>):(
