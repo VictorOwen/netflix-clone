@@ -11,12 +11,15 @@ function App() {
  
   return (
     <div className="app">
+    {!user ? (
+      <LoginScreen />
+    ) : (
       <BrowserRouter>
-      
       <Routes>
         <Route path="/" element={<HomeScreen />} />
       </Routes>
     </BrowserRouter>
+    )}
     
 
     </div>
@@ -26,4 +29,3 @@ function App() {
 
 
 export default App
-//{!user?(<LoginScreen/>):(
